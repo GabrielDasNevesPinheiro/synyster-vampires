@@ -1,0 +1,13 @@
+# Godot 4
+.godot/
+*.tmp
+*.translation
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Exportações do jogo
+builds/
+*.exe
+*.zip
