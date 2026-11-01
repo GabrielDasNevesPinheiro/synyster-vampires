@@ -96,6 +96,11 @@ PRÓXIMA NOITE (mantém upgrades) → dificuldade/mundo escalam
 | **1–9** | Slots de habilidades ativas — **cada slot configurável** (jogador atribui qual habilidade vai em qual tecla) ✅ |
 | **E** | **Mordida direta** (na presa próxima) ✅ |
 
+#### Mira (estilo LoL) ✅
+- **Ataque básico e habilidades miram para onde o mouse estiver** — direção/coordenada do cursor
+- Se o cursor estiver **além do Alcance**, a ação dispara na direção do cursor, **limitada ao alcance máximo** (comportamento de clamp do LoL)
+- Consequência: todo ataque/habilidade é deliberado e direcional — skill expressa via mira, não só via build
+
 - Esquema estilo ARPG (Diablo/Path of Exile) — coerente com o pilar "RPG de verdade"
 - ❓ Suporte a controle/gamepad? (WASD+mouse sugere PC-first; registrar decisão depois)
 

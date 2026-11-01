@@ -101,6 +101,8 @@ projeto/
 ### 4.3 Controles (GDD §2.7)
 WASD move · LMB ataque básico · RMB canalizar (segurar) · E mordida · (1–9 sem função no protótipo)
 
+**Mira (estilo LoL):** ataque básico e habilidades disparam na direção/coordenada do mouse; se o cursor estiver além do Alcance, o disparo é limitado ao alcance máximo naquela direção (clamp).
+
 ---
 
 ## 5. Marcos de implementação (ordem)
