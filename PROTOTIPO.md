@@ -107,6 +107,16 @@ WASD move · LMB ataque básico · RMB canalizar (segurar) · E mordida · F int
 
 **Decisões menores registradas:** câmera segue o vampiro (zoom fixo no protótipo) · corpos de vítimas persistem e continuam sangrando até secar · Resistência única cobre dano físico e mágico (simplificação v0).
 
+### 4.4 Detalhes de implementação (v0) ✅
+1. **Cooldown da mordida:** 1s entre tentativas de E (anti-spam)
+2. **Poças de sangue:** poças novas a <30px de uma existente **fazem merge** (somam valores); teto de 40 poças ativas no mapa (a mais antiga evapora) — performance e legibilidade
+3. **Fluxo de fim:** morte → tela "A Sede venceu" → restart; amanhecer no esconderijo → tela "Noite 1 sobrevivida" + resumo (vítimas, sangue) → fim da demo (multi-noites é pós-protótipo)
+4. **Indicadores de estado sobre NPCs** (como no mockup): `!` alerta/combate · `?` investigando · `Zzz` dormindo — essencial para ler a IA
+5. **Texto flutuante:** dano causado/recebido e `+sangue` absorvido — feedback de game feel barato e obrigatório
+6. **Pause:** Esc pausa (resume/sair) — o timer da noite congela
+7. **Idioma:** textos em PT-BR; strings centralizadas (arquivo de tradução) para EN futuro
+8. **"Nv." do HUD** = quantidade de marcos de sangue atingidos na run
+
 ---
 
 ## 5. Marcos de implementação (ordem)

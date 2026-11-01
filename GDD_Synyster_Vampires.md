@@ -395,6 +395,9 @@ Cada item tem dois eixos independentes:
 - **Canto superior direito:** contadores — moeda de meta-progressão, progresso ao próximo marco de upgrade, contador de vítimas ✅ + **minimapa**
 - **Canto inferior esquerdo:** objetivos/notificações (ex.: rumores, alertas da vila, eventos da noite)
 - **No mundo:** anel de range de canalização no chão, trilhas de sangue em partículas
+- **Indicadores de estado sobre NPCs** ✅ (como no mockup): `!` alerta/combate, `?` investigando, `Zzz` dormindo — leitura instantânea da IA
+- **Texto flutuante** ✅: dano e `+sangue` absorvido
+- **"Nv."** = marcos de sangue atingidos na run ✅
 
 ### 7.2 Telas
 - Seleção de vampiro (com passivas e stats visíveis)
