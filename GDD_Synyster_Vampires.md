@@ -95,6 +95,7 @@ PRÓXIMA NOITE (mantém upgrades) → dificuldade/mundo escalam
 | **Clique direito** | Canalização de absorção de sangue no chão |
 | **1–9** | Slots de habilidades ativas — **cada slot configurável** (jogador atribui qual habilidade vai em qual tecla) ✅ |
 | **E** | **Mordida direta** (na presa próxima) ✅ |
+| **F** | **Interagir com o mundo** — abrir baús, portas, entrar no esconderijo ✅ (E fica exclusiva da mordida, sem ambiguidade) |
 
 #### Mira (estilo LoL) ✅
 - **Ataque básico e habilidades miram para onde o mouse estiver** — direção/coordenada do cursor
@@ -160,7 +161,18 @@ PRÓXIMA NOITE (mantém upgrades) → dificuldade/mundo escalam
 - **Mapa procedural por run** ✅ — cada run gera um território novo (rejogabilidade), e o mapa **persiste durante as noites daquela run**
 - Consequência de design: a **memória adaptativa da IA é por run** — os humanos aprendem seus padrões ao longo das noites daquela run específica, dentro do mesmo território
 
-### 3.2 A Sociedade Humana (simulação leve)
+### 3.2 A Rotina Noturna ✅ DEFINIDO
+A vila tem **ciclo dinâmico ao longo da noite**:
+- **Início da noite (movimentado):** humanos nas ruas, terminando atividades, voltando para casa — muitas presas visíveis, muitos olhos
+- **Meio da noite (transição):** ruas esvaziando; ficam guardas em patrulha, bandidos agindo, retardatários
+- **Madrugada (vazia):** quase todos dormindo em casa; presas de rua são raras — mas presas dormindo são vulneráveis (bônus de mordida, §2.8) quando interiores existirem
+- **Consequência de design:** a pressão da Fome casa com o arco da noite — caçar cedo é farto mas arriscado (testemunhas), caçar tarde é escasso mas silencioso. E o esconderijo (§2.4) força o retorno no fim
+
+### 3.3 Interiores ✅ DEFINIDO (escopo)
+- **Protótipo: sem interiores** — construções são sólidas (cenário); "dormir em casa" = o NPC entra pela porta e é despawnado/recolhido
+- **Vertical Slice ou posterior:** interiores simples entram (uma sala por casa), destravando: caça a presas dormindo, loot indoor, stealth em prédios
+
+### 3.4 A Sociedade Humana (simulação leve)
 > 📎 **Stat blocks completos de todos os NPCs (humanos e animais): ver `NPCS.md`**
 > Todos os mobs usam a ficha universal de 21 atributos (§8.3).
 Humanos têm **classes sociais** com rotinas e comportamentos distintos.
@@ -190,7 +202,7 @@ Humanos têm **classes sociais** com rotinas e comportamentos distintos.
 
 > ⚠️ **Nota de risco (dev solo + IA):** com a implementação assistida por IA, o gargalo deixa de ser tempo de codificação e passa a ser **coerência de design, integração entre sistemas e playtest/balanceamento** — que continuam 100% humanos. O rollout faseado continua valendo: cada fase só avança se a anterior estiver divertida. Nunca cortar as 4 classes da Fase 1 — elas já sustentam o jogo.
 
-### 3.3 IA Adaptativa (diferencial do jogo)
+### 3.5 IA Adaptativa (diferencial do jogo)
 Os humanos **aprendem com os padrões do jogador**:
 - Jogador sempre ataca no mesmo ponto do mapa → humanos **evitam a área** ou montam **emboscadas** ali
 - Jogador sempre usa a mesma tática → guardas/caçadores desenvolvem **contra-medidas** (armadilhas, patrulhas cruzadas, iscas)

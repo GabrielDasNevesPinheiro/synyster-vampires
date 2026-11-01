@@ -24,7 +24,9 @@
 
 ## 2. Escopo — o que NÃO ENTRA (não construir agora)
 
-❌ Shader de pixelização · ❌ mapa procedural · ❌ loot/inventário/itens · ❌ habilidades ativas/passivas (além das de teste) · ❌ IA adaptativa/memória · ❌ multi-noites · ❌ meta-progressão · ❌ 4 vampiros · ❌ áudio final · ❌ menus completos
+❌ Shader de pixelização · ❌ mapa procedural · ❌ loot/inventário/itens · ❌ **interiores de construções** (casas são sólidas; NPC "dormir" = despawna na porta) · ❌ habilidades ativas/passivas (além das de teste) · ❌ IA adaptativa/memória · ❌ multi-noites · ❌ meta-progressão · ❌ 4 vampiros · ❌ áudio final · ❌ menus completos
+
+> **Rotina noturna no protótipo (versão simplificada do GDD §3.2):** camponeses começam na rua e, na segunda metade da noite, vão para casa e despawnam; guardas patrulham a noite toda. Interiores completos ficam para depois do protótipo.
 
 > Arte: **placeholders** (sprites simples/formas). O visual do mockup vem na Vertical Slice.
 
@@ -99,9 +101,11 @@ projeto/
 - **Tempo da noite:** autoload `GameTime` com sinal `amanhecer_proximo` (120s) e `amanheceu`
 
 ### 4.3 Controles (GDD §2.7)
-WASD move · LMB ataque básico · RMB canalizar (segurar) · E mordida · (1–9 sem função no protótipo)
+WASD move · LMB ataque básico · RMB canalizar (segurar) · E mordida · F interagir (esconderijo) · (1–9 sem função no protótipo)
 
 **Mira (estilo LoL):** ataque básico e habilidades disparam na direção/coordenada do mouse; se o cursor estiver além do Alcance, o disparo é limitado ao alcance máximo naquela direção (clamp).
+
+**Decisões menores registradas:** câmera segue o vampiro (zoom fixo no protótipo) · corpos de vítimas persistem e continuam sangrando até secar · Resistência única cobre dano físico e mágico (simplificação v0).
 
 ---
 
